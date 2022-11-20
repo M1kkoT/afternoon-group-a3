@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import AddTodo from './AddTodo.js';
 import TaskList from './TaskList.js';
+import TrafficLight from './Trafficlight';
+import NumbersTable from './NumbersTable';
+import Facebook from './Facebook.js';
+
 
 
 /*challenge 1 */ 
@@ -191,6 +195,17 @@ export default function TaskApp() {
         onChangeTodo={handleChangeTodo}
         onDeleteTodo={handleDeleteTodo}
       />
+      <div>
+        <TrafficLight />
+      </div>
+      <div>
+        <NumbersTable limit={12}/>
+      </div>
+      <div>
+        <Facebook/>
+      </div>
+      
     </>
   );
 }
+
